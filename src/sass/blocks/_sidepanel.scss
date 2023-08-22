@@ -8,6 +8,13 @@
     justify-content: space-between;
     align-items: center;
     z-index: 3;
+    &__link {
+        &:hover {
+            svg path {
+                fill: #3008b3;
+            }
+        }
+    }
     &__divider {
         height: 70px;
         width: 2px;
