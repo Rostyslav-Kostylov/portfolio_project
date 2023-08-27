@@ -1,0 +1,34 @@
+.toolset {
+    padding-top: 120px;
+    &__wrapper {
+        padding: 60px 10px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        column-gap: 13px;
+        grid-template-rows: repeat(2, minmax(270px));
+        row-gap: 13px;
+    }
+    &__item {
+        margin: 30px 30px 25px 30px;
+        &-head {
+            padding-top: 20px;
+        }
+        &-body {
+            width: 210px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            padding-top: 15px;
+        }
+    }
+    .toolset__item:nth-child(4) {
+        .toolset__item-head {
+            padding-top: 45px;
+        }
+    }
+    .toolset__item:nth-child(7) {
+        .toolset__item-head {
+            padding-top: 39px;
+        }
+    }
+}
