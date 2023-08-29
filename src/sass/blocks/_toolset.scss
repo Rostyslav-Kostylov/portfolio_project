@@ -9,6 +9,8 @@
         row-gap: 13px;
     }
     &__item {
+        border: 1px solid #000;
+        background: rgba(196, 196, 196, 0.00);
         margin: 30px 30px 25px 30px;
         &-head {
             padding-top: 20px;
