@@ -10,20 +10,12 @@ close.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
-// const counters = document.querySelectorAll('.skills__item-percent'),
-//     lines = document.querySelectorAll('.skills__item-scale');
-
-// counters.forEach(  (item, i) => {
-//     lines[i].style.width = item.innerHTML;
-// });
-
-
 const counters = document.querySelectorAll('.skills__item-percent'),
     lines = document.querySelectorAll('.skills__item-scale');
 
 counters.forEach((item, i) => {
-    const widthPercentage = parseFloat(item.innerHTML); // Преобразуем строку в число
-    const fullWidth = lines[i].offsetWidth; // Получаем ширину родительского элемента
+    const widthPercentage = parseFloat(item.innerHTML);
+    const fullWidth = lines[i].offsetWidth;
 
     const widthInPixels = (widthPercentage / 100) * fullWidth + 'px';
     lines[i].querySelector('span').style.width = widthInPixels;

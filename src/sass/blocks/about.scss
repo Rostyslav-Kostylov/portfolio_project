@@ -25,7 +25,7 @@
     .divider {
         margin: 0;
     }
-    h2 {
+    &__title {
         position: relative;
         @include before_circle;
         padding: 0 0 0 13px;
